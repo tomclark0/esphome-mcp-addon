@@ -1,13 +1,8 @@
-#!/usr/bin/env bash
-# ESPHome MCP add-on entrypoint.
-# Reads options from /data/options.json (HA add-on convention), exports the
-# dashboard URL, and runs the ESPHome-MCP web (Streamable HTTP) server.
-
+#!/bin/sh
 set -e
 
 echo "[esphome-mcp] starting"
 
-# Options file, real or empty fallback.
 DASHBOARD_URL="${ESPHOME_DASHBOARD_URL:-}"
 if [ -f /data/options.json ]; then
   VAL="$(python3 -c 'import json,sys; print(json.load(open("/data/options.json")).get("esphome_dashboard_url",""))' 2>/dev/null || true)"
