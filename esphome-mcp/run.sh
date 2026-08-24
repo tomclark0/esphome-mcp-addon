@@ -10,7 +10,10 @@ if [ -f /data/options.json ]; then
 fi
 
 if [ -z "$DASHBOARD_URL" ]; then
-  echo "[esphome-mcp] ERROR: esphome_dashboard_url not set" >&2
+  echo "[esphome-mcp] ERROR: esphome_dashboard_url is not set." >&2
+  echo "[esphome-mcp] Set it in the add-on configuration (esphome_dashboard_url)" >&2
+  echo "[esphome-mcp] or via the ESPHOME_DASHBOARD_URL environment variable." >&2
+  echo "[esphome-mcp] Example: http://<your-esphome-host>:6052" >&2
   exit 1
 fi
 

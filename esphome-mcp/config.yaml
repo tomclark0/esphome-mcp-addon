@@ -14,6 +14,8 @@ ports:
 ports_description:
   8080/tcp: "ESPHome MCP HTTP endpoint (Streamable HTTP at /mcp)"
 options:
-  esphome_dashboard_url: "http://5c53de3b-esphome:6052"
+  esphome_dashboard_url: ""
 schema:
   esphome_dashboard_url: str
+schema_required:
+  - esphome_dashboard_url
