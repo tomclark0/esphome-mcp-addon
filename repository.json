@@ -1,0 +1,8 @@
+{
+  "name": "ESPHome MCP Add-on repository",
+  "url": "https://github.com/tomclark0/esphome-mcp-addon",
+  "maintainer": "tomclark0",
+  "addons": {
+    "esphome-mcp": "esphome-mcp/"
+  }
+}
