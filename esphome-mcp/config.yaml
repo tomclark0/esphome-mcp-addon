@@ -1,5 +1,5 @@
 name: ESPHome MCP
-version: "2026.6.1"
+version: "2026.6.1-r2"
 slug: esphome_mcp
 description: MCP server exposing ESPHome Device Builder operations over Streamable HTTP. Wraps loryanstrant/ESPHome-MCP.
 url: https://github.com/tomclark0/esphome-mcp-addon
